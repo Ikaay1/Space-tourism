@@ -1,0 +1,146 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoDiv {
+    width: 35px;
+    margin-left: 3rem;
+}
+
+.logoDiv > img {
+    width: 100%;
+}
+
+.navMenu {
+    padding: 0 5rem;
+    background: rgba(255, 255, 255, 0.04);
+    background-blend-mode: normal;
+    backdrop-filter: blur(30px);
+    display: flex;
+}
+
+.navLink > .link {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2.7px;
+    text-decoration: none;
+    font-family: 'BarlowCondensed-Regular';
+    display: block;
+    height: 57px;
+    display: flex;
+    align-items: center;
+}
+
+.navLink:not(.navLink:last-child) {
+    margin-right: 1.2rem;
+}
+
+.navLink > .link.active {
+    border-bottom: 4px solid #ffffff;
+}
+
+.navLink > .link > span {
+    font-family: 'BarlowCondensed-Bold';
+}
+
+.hamburgerDiv {
+    display: none;
+}
+
+.fade {
+    display: none;
+}
+
+.mobileNav {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .logoDiv {
+        margin-left: 0rem;
+    }
+
+    .navMenu {
+        padding: 0 0;
+        padding-right: 0.2rem;
+    }
+
+    .navLink > .link {
+        font-size: 12px;
+    }
+
+    .navLink:not(.navLink:last-child) {
+        margin-right: 0.5rem;
+    }
+
+    .hamburgerDiv {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .navMenu {
+        display: none;
+    }
+
+    .nav {
+        padding-right: 1rem;
+    }
+
+    .hamburgerDiv {
+        cursor: pointer;
+    }
+
+    .hamburger {
+        color: white;
+        width: 30px;
+        height: 30px;
+    }
+
+    .mobileNav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 240px;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.04);
+        background-blend-mode: normal;
+        backdrop-filter: blur(30px);
+        padding-top: 6.5rem;
+        padding-left: 1rem;
+        display: none;
+    }
+
+    .mobileNav.active {
+        display: block;
+    }
+
+    .mobileNavLink:not(.mobileNavLink:last-child) {
+        margin-bottom: 1.7rem;
+    }
+
+    .mobileLinks {
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'BarlowCondensed-Regular';
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 2.7px;
+    }
+
+    .closeDiv {
+        cursor: pointer;
+    }
+
+    .close {
+        color: white;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 6%;
+        right: 7%;
+    }
+}

@@ -1,0 +1,175 @@
+.home {
+    background-image: url('/public/assets/home/background-home-desktop.jpg') !important;
+    background-repeat: no-repeat;
+    padding: 1.5rem 0 4rem 0rem;
+}
+
+.homeBody {
+    margin-top: 14rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homeDetails {
+    width: 40%;
+}
+
+.homeQuestion {
+    color: #d0d6f9;
+    font-family: 'BarlowCondensed-Regular';
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 4.725px;
+}
+
+.homeDetails > div {
+    color: #ffffff;
+    font-family: 'Bellefair-Regular';
+    font-size: 150px;
+    font-weight: 400;
+    margin-top: 0.3rem;
+}
+
+.homeDetails > p:not(.homeQuestion) {
+    color: #d0d6f9;
+    font-family: 'Barlow-Regular';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 0.2rem;
+}
+
+.explore {
+    width: 274px;
+    height: 274px;
+    background: #ffffff;
+    background-blend-mode: normal;
+    color: #0b0d17;
+    font-family: 'Bellefair-Regular';
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .homeBody {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .home {
+        background-image: url('/public/assets/home/background-home-tablet.jpg') !important;
+        background-size: cover;
+        padding-left: 2rem;
+    }
+
+    .homeBody {
+        margin-top: 6.5rem;
+        margin-left: 0rem;
+        margin-right: 2rem;
+        display: block;
+    }
+
+    .homeDetails {
+        width: 100%;
+    }
+    .homeQuestion {
+        color: #d0d6f9;
+        font-family: 'Barlow Condensed';
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 3.375px;
+    }
+
+    .homeDetails > div {
+        color: #ffffff;
+        font-family: Bellefair;
+        font-size: 150px;
+        font-weight: 400;
+        line-height: 150px;
+        text-align: center;
+    }
+
+    .homeDetails > p:not(.homeQuestion) {
+        color: #d0d6f9;
+        font-family: Barlow;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .explore {
+        margin: 0 auto;
+        margin-top: 9rem;
+        width: 242px;
+        height: 242px;
+        color: #0b0d17;
+        font-family: Bellefair;
+        font-size: 32px;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home {
+        background-image: url('/public/assets/home/background-home-mobile.jpg') !important;
+        background-size: cover;
+        padding-left: 1rem;
+    }
+
+    .homeBody {
+        margin-top: 4rem;
+        margin-right: 1rem;
+    }
+
+    .homeDetails > div {
+        color: #ffffff;
+        font-family: Bellefair;
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    .homeQuestion {
+        color: #d0d6f9;
+        font-family: 'Barlow Condensed';
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 2.7px;
+    }
+
+    .homeDetails > p:not(.homeQuestion) {
+        color: #d0d6f9;
+        font-family: Barlow;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .explore {
+        width: 150px;
+        height: 150px;
+        color: #0b0d17;
+        font-family: Bellefair;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 1.25px;
+        margin-top: 6.5rem;
+    }
+}
